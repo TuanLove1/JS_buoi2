@@ -7,11 +7,11 @@ document.getElementById('btnTich').onclick = function (){
     document.getElementById('thongbao').classList.add('thong-bao')
 }
 document.getElementById('btnTb').onclick = function(){
-    var so1 = document.getElementById('number1').value;
-    var so2 = document.getElementById('number2').value;
-    var so3 = document.getElementById('number3').value;
-    var so4 = document.getElementById('number4').value;
-    var so5 = document.getElementById('number5').value;
+    var so1 = document.getElementById('number1').value * 1;
+    var so2 = document.getElementById('number2').value * 1;
+    var so3 = document.getElementById('number3').value * 1;
+    var so4 = document.getElementById('number4').value * 1;
+    var so5 = document.getElementById('number5').value * 1;
     var totalTb = parseInt((so1 + so2 + so3 + so4 + so5)/5);
     var kqTb = 'Gía trị trung bình là: ' + totalTb;
     document.getElementById('giatritb').innerHTML = kqTb;
